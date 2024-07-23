@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpreter Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interpreter Guide</h1> 
+
+    <p>Switch to Hide 1 Language</p>
+    <button id="hideOneLanguage">Hide</button>
+
+    <h2>Vocabulario Basico</h2>
+    <div class="basico">
+            <ol class="inEnglish">
+                <li class="eLi1">Abscess</li>
+                <li class="eLi2">Ache</li>
+                <li class="eLi3">Acne</li>
+                <li class="eLi4">Acute</li>
+                <li class="eLi5">Allergies</li>
+                <li class="eLi6">Analgesic</li>
+                <li class="eLi7">Anaphylactic shock</li>
+                <li class="eLi8">Anti-inflammatory</li>
+                <li class="eLi9">Antibiotic</li>
+                <li class="eLi10">Antibody</li>
+                <li class="eLi11">Antioxidants</li>
+                <li class="eLi12">Bilateral</li>
+                <li class="eLi13">Bruise</li>
+                <li class="eLi14">Chills</li>
+                <li class="eLi15">Chronic Pain</li>
+                <li class="eLi16">Cold</li>
+                <li class="eLi17">Contusion</li>
+                <li class="eLi18">Cough</li>
+                <li class="eLi19">Deafness</li>
+                <li class="eLi20">Degenerative</li>
+                <li class="eLi21">Dehydration</li>
+                <li class="eLi22">Disabilities</li>
+                <li class="eLi23">Dispensing</li>
+                <li class="eLi24">Dose/Dosage</li>
+                <li class="eLi25">Dull Pain</li>
+                <li class="eLi26">Edema</li>
+                <li class="eLi27">Efficacy</li>
+                <li class="eLi28">Electrolytes</li>
+                <li class="eLi29">Female</li>
+                <li class="eLi30">Fever</li>
+                <li class="eLi20">Flu</li>
+                <li class="eLi1">Formulation(Pharmaceutical)</li>
+                <li class="eLi1">Generic Drug</li>
+                <li class="eLi1">Heat Stroke</li>
+                <li class="eLi1">Immunizations</li>
+                <li class="eLi1">Influenza</li>
+                <li class="eLi1">Injury</li>
+                <li class="eLi1">Instep</li>
+                <li class="eLi1">Noninvasive</li>
+                <li class="eLi1">Male</li>
+                <li class="eLi1">Migraine</li>
+                <li class="eLi1">Mole</li>
+                <li class="eLi1">Muscle Sprain</li>
+                <li class="eLi1">Sprain</li>
+                <li class="eLi1">Non Verbal</li>
+                <li class="eLi1">Numbness</li>
+                <li class="eLi1">Obesity</li>
+                <li class="eLi1">Over the Counter Medication</li>
+                <li class="eLi1">Overdose</li>
+                <li class="eLi1">Panick Attack</li>
+                <li class="eLi1">Pain</li>
+                <li class="eLi1">Pharmaceutical Care</li>
+                <li class="eLi1">Prescription</li>
+                <li class="eLi1">Rash</li>
+                <li class="eLi1">Seizure</li>
+                <li class="eLi1">Sharp Pain</li>
+                <li class="eLi1">Shot Record</li>
+                <li class="eLi1">Side Effects</li>
+                <li class="eLi1">Spasm</li>
+                <li class="eLi1">Speciality</li>
+                <li class="eLi1">Tetanus Shot</li>
+                <li class="eLi1">Toxicology</li>
+                <li class="eLi1">Vitamins</li>
+            </ol>
+
+            <ol class="inSpanish">
+                <li>Absceso</li>
+                <li>Dolor</li>
+                <li>Acne</li>
+                <li>Agudo</li>
+                <li>Alergias</li>
+                <li>Analgesico</li>
+                <li>Shock anafilactico</li>
+                <li>Antiinflamatorio</li>
+                <li>Antibiotico</li>
+                <li>Anticuerpo</li>
+                <li>Antioxidantes</li>
+                <li>Bilateral</li>
+                <li>Bruise</li>
+                <li>Escalofrios</li>
+                <li>Dolor Cronico</li>
+                <li>Resfriado</li>
+                <li>Contusion</li>
+                <li>Tos</li>
+                <li>Sordera</li>
+                <li>Degenerativo</li>
+                <li>Deshidratacion</li>
+                <li>Discapacidades</li>
+                <li>Despachar/Dispensador/Distribucion</li>
+                <li>Dosis</li>
+                <li>Dolor Sordo</li>
+                <li>Edema</li>
+                <li>Eficacia</li>
+                <li>Electrolitos</li>
+                <li>Femenino</li>
+                <li>Fiebre</li>
+                <li>Gripe</li>
+                <li>Formulacion</li>
+                <li>Medicamente Generico</li>
+                <li>Golpe de Calor</li>
+                <li>Inmunizaciones</li>
+                <li>Influenza</li>
+                <li>Lesion</li>
+                <li>Empeine</li>
+                <li>No Invasivo</li>
+                <li>Masculino</li>
+                <li>Migrana/Dolor de Cabeza</li>
+                <li>Lunar</li>
+                <li>Distension Muscular</li>
+                <li>Esguince</li>
+                <li>No Verbal</li>
+                <li>Adormecimiento/Entumecimiento</li>
+                <li>Obesidad</li>
+                <li>Medicamento de Venta Libre</li>
+                <li>Sobredosis</li>
+                <li>Ataque de Panico</li>
+                <li>Dolor</li>
+                <li>Atencion Farmaceutica</li>
+                <li>Receta Medica/Prescripcion</li>
+                <li>Sarpullido</li>
+                <li>Convulsion</li>
+                <li>Dolor Agudo</li>
+                <li>Registro de Vacunas</li>
+                <li>Efectos Secundarios</li>
+                <li>Espasmo</li>
+                <li>Especialidad</li>
+                <li>Vacuna contra el Tetanos</li>
+                <li>Toxicologia</li>
+                <li>Vitaminas</li>
+            </ol>
+
+    </div>
+
+    <div class="Partes del Cuerpo">
+        <h2>Partes del Cuerpo</h2>
+        
+        <div class="head">
+            <p>HEAD</p>
+            <ol class="inEnglish"><br>
+                <li>Cheek</li>
+                <li>Chin</li>
+                <li>Shin</li>
+                <li>Ear</li>
+                <li>Eyebrow</li>
+                <li>Eye</li>
+                <li>Forehead</li>
+                <li>Jaw</li>
+                <li>Lips</li>
+                <li>Mouth</li>
+                <li>Neck</li>
+                <li>Nose</li>
+                <li>Throat</li>
+                <li>eyelid</li>    
+            </ol>
+            
+            <p>HEAD</p>
+            <ol class="inSpanish"><br>
+                <li>Mejilla</li>
+                <li>Barbilla</li>
+                <li>Espinilla/Tibia</li>
+                <li>Oreja</li>
+                <li>Ceja</li>
+                <li>Ojo</li>
+                <li>Frente</li>
+                <li>Mandibula</li>
+                <li>Labios</li>
+                <li>Boca</li>
+                <li>Cuello</li>
+                <li>Nariz</li>
+            </ol>
+        </div>
+        
+        <div class="torso"> 
+        <ol class="inEnglish">
+            <p>TORSO</p>
+            <li>Abdomen</li>
+            <li>Back</li>
+            <li>Breasts</li>
+            <li>Cervical Spine</li>
+            <li>Chest</li>
+            <li>Collarbone</li>
+            <li>Groin</li>
+            <li>Pelvis</li>
+            <li>Penis</li>
+            <li>Scrotum</li>
+            <li>Vulva</li>
+            <li>Vertebrae</li>
+            <li>Umbilicus</li>
+            <li>Liver</li>
+            <li>Kidneys</li>
+            <li>Intestines</li>
+            <li>Backbone</li>
+            <li>Forearm</li>
+            <li>Waist</li>
+            <li>Navel</li>
+            <li>Hip</li>
+            <li>Torso </li>
+            <li>Spleen(BAZO)</li>
+            <li>Gallbladder(Vesicula Biliar)</li>
+            <li>Urinary Bladder</li>
+        </ol>
+
+        <ol class="inSpanish">
+            <p>TORSO</p>
+            <li>Abdomen</li>
+            <li>Espalda</li>
+            <li>Pechos</li>
+            <li>Columna Cervical</li>
+            <li>Pecho</li>
+            <li>Clavicula</li>
+            <li>Ingle</li>
+            <li>Pelvis</li>
+            <li>Pene</li>
+            <li>Escroto</li>
+            <li>Vulva</li>
+            <li>Vertebra</li>
+            <li>Ombligo</li>
+        </ol>
+    </div>  
+
+    <div> 
+        <ol class="inEnglish">
+            <p>UPPER LIMB</p>
+            <li>Axilla</li>
+            <li>Elbow</li>
+            <li>Finger</li>
+            <li>Forearm</li>
+            <li>Hand</li>
+            <li>Shoulder</li>
+            <li>Wrist</li>
+        </ol>
+
+        <ol class="inSpanish">
+            <p>UPPER LIMB</p>
+            <li>Axila</li>
+            <li>Codo</li>
+            <li>Dedo</li>
+            <li>Antebrazo</li>
+            <li>Mano</li>
+            <li>Hombro</li>
+            <li>Muneca</li>
+        </ol>            
+    </div>
+
+    <div>   
+        <ol class="inEnglish">
+            <p>LOWER LIMB</p>
+            <li>Ankle</li>
+            <li>Buttocks</li>
+            <li>Calf</li>
+            <li>Foot</li>
+            <li>Heel</li>
+            <li>Knee</li>
+            <li>Thigh</li>
+            <li>Hamstring</li>
+            <li>Instep</li>
+        </ol>
+
+        <ol class="inSpanish">
+            <p>LOWER LIMB</p>
+            <li>Tobillo</li>
+            <li>Gluteos</li>
+            <li>Pantorrilla</li>
+            <li>Pie</li>
+            <li>Talon</li>
+            <li>Rodilla</li>
+            <li>Muslo</li>
+            <li>Musculos Isquiotibiales</li>
+            <li>Empeine</li>
+        </ol>   
+    </div>
+        
+    <div class="Blood Test">
+        <h2>Blood Test</h2>
+        <ol>
+        <li>Bilirubin</li>
+        <li>Blood Urea Nitrogen(BUN)</li>
+        <li>Tryglicerides </li>
+        <li>Creatinine (CREA)</li>
+        <li>Glucose</li>
+        <li>Glycohemoglobin(HbA1c)</li>
+        <li>Hemoglobin</li>
+        <li>Uric Acid</li>
+        <li>Rapid Strep Test</li>
+        <li>Rheumatoid Factor</li>
+        <li>Thyroid Stimulating Hormone (TSH)</li>
+        </ol>
+    </div>
+
+    <div class="Cardiovascular System<">
+        <h2>Cardiovascular System</h2>
+        <ol>
+        <li>Aorta</li>
+        <li>Angioplasty</li>
+        <li>Angina</li>
+        <li>Aneurysm</li>
+        <li>Aortic Valve</li>
+        <li>Alzheimer Disease</li>
+        <li>Anticoagulant</li>
+        <li>Atrial Fibrillation </li>
+        <li>Axillary Artery</li>
+        <li>Axillary Vein</li>
+        <li>Beta Blocker</li>
+        <li>Blood Pressure</li>
+        <li>Blood Pressure Cuff</li>
+        <li>Blood Pressure Monitor</li>
+        <li>Blood Clot</li>
+        <li>Cardiac Arrest </li>
+        <li>Cardiac Ablation</li>
+        <li>Cardiovascular Disease</li>
+        <li>Cholesterol</li>
+        <li>Coagulate</li>
+        <li>Congestive Heart Failure</li>
+        <li>Coronary Heart Disease</li>
+        <li>Diuretic </li>
+        <li>EdemaEmbolism</li>
+        <li>Endocarditis</li>
+        <li>Heart Murmur</li>
+        <li>Heart Failure </li>
+        <li>High Blood Pressure</li>
+        <li>Hypertension</li>
+        <li>Implantable Cardioverter Defibrillator (ICD)</li>
+        <li>Myocarditis</li>
+        <li>Pacemaker</li>
+        <li>Pericarditis</li>
+        <li>Pulmonary Vein</li>
+        <li>Stent</li>
+        <li>Tachycardia</li>
+        <li>Thrombosis/Deep Vein Thrombosis</li>
+        </ol>
+    </div>
+
+    <div class="Dental Terminology">
+        <h2>Dental Terminology</h2>
+        <ol>
+        <li>Bleaching</li>
+        <li>Braces</li>
+        <li>Bridge</li>
+        <li>Bruxism</li>
+        <li>Calculus</li>
+        <li>Cavities</li>
+        <li>Chew</li>
+        <li>Cleft Lip</li>
+        <li>Cleft Palate</li>
+        <li>Crowding</li>
+        <li>Crow</li>
+        <li>Dental Cleaning</li>
+        <li>Dental Implant</li>
+        <li>Dentin</li>
+        <li>Dentures </li>
+        <li>Enamel </li>
+        <li>Filling</li>
+        <li>Fluoride</li>
+        <li>Gingivitis</li>
+        <li>Graft</li>
+        <li>Gum Diseases</li>
+        <li>Gum Recession</li>
+        <li>Gums</li>
+        <li>Halitosis(Bad Breath)</li>
+        <li>Jaw</li>
+        <li>Malocclusion</li>
+        <li>Orthodontics</li>
+        <li>Overlap</li>
+        <li>Periodontal Disease</li>
+        <li>Plaque</li>
+        <li>Root Canal</li>
+        <li>Tartar</li>
+        <li>Temporomandibular Joint (TMJ)</li>
+        <li>Temporomandibular Joint (TMJ) Disorder</li>
+        <li>Tooth Decay</li>
+        <li>Tooth Resorption</li>
+        <li>Tooth Scaling</li>
+        <li>Tooth Sensitivity</li>
+        <li>Tooth Whitening</li>
+        <li>Toothache</li>
+        <li>Wisdom Teeth</li>
+        </ol>
+    </div>
+
+    <div class="GI- Digestive System">
+        <h2>GI - Digestive System</h2>
+    <ol> 
+        <li>Acid Reflux</li>
+        <li>Acute Pancreatitis </li>
+        <li>Anorexia Nervosa</li>
+        <li>Appendix</li>
+        <li>Ascending Colon</li>
+        <li>Bile</li>
+        <li>Bilirubin</li>
+        <li>Bloody Stool</li>
+        <li>Bowel Movement</li>
+        <li>Celiac DiseaseCHolecystitis</li>
+        <li>Colonoscopy</li>
+        <li>Chron's Disease</li>
+        <li>Descending Colon</li>
+        <li>Digestion</li>
+        <li>Diverticulitis</li>
+        <li>Duodenum</li>
+        <li>Eating Disorders</li>
+        <li>Endoscopy</li>
+        <li>Esophagus</li>
+        <li>Fecal Transplant</li>
+        <li>Gallbladder</li>
+        <li>Gallstone</li>
+        <li>Gastroenteritis</li>
+        <li>Hemorrhoids</li>
+        <li>Hepatitis</li>
+        <li>Indigestion</li>
+        <li>Irritable Bowel Syndrome</li>
+        <li>Jaundice</li>
+        <li>Laxative</li>
+        <li>Liver</li>
+        <li>Nausea</li>
+        <li>Pancreas</li>
+        <li>Spleen</li>
+        <li>Stomach</li>
+        <li>Stool Culture</li>
+        <li>Suppository</li>
+        <li>Ulcer</li>
+    </ol>
+
+    </div>
+
+    <div class="Endocrine System">
+        <h2>Endocrine System</h2>
+    <ol>
+        <li>Adrenal Gland</li>
+        <li>Complex Carbohydrates</li>
+        <li>Cushing's Syndrome</li>
+        <li>Diabetes</li>
+        <li>Diabetic Neuropathy </li>
+        <li>Diabetic Retinopathy</li>
+        <li>Enzymes</li>
+        <li>Estrogen</li>
+        <li>Exocrine Glands</li>
+        <li>Glands Follicle-Stimulating Hormone (FSH)</li>
+        <li>Gland</li>
+        <li>Glucocorticoid</li>
+        <li>Goiter</li>
+        <li>Gonadotropins</li>
+        <li>Graves Disease</li>
+        <li>Hashimoto's Disease</li>
+        <li>Hirsutism </li>
+        <li>Hormone Imbalance</li>
+        <li>Hyperthyroidism </li>
+        <li>Hypothalamus</li>
+        <li>Hypothyroidism</li>
+        <li>Glucometer</li>
+        <li>Glucose</li>
+        <li>Juvenile Diabetes</li>
+        <li>Menarche</li>
+        <li>Menopause</li>
+        <li>Parathyroid Gland</li>
+        <li>Pineal Gland</li>
+        <li>Pituitary Gland</li>
+        <li>Polycystic Ovary Syndrome </li>
+        <li>Prolactin</li>
+        <li>Thyroid Gland </li>
+        </ol>
+    </div>
+
+    <div class="Genetics">
+        <h2>Genetics</h2>
+        <ol>
+            <li>Carrier</li>
+            <li>Carrier SCreening</li>
+            <li>Chromosomal Abnormalities</li>
+            <li>Congenital Heart Defect</li>
+            <li>Cystic Fibrosis </li>
+            <li>Down Syndrome (Trisomy 21)</li>
+            <li>Family History</li>
+            <li>Fragile X Syndrome </li>
+            <li>Gene </li>
+            <li>Gene Therapy</li>
+            <li>Gene Variants </li>
+            <li>Genetic Counseling</li>
+            <li>Genetic Disorder</li>
+            <li>Genetic Marker </li>
+            <li>Genetic Testing</li>
+            <li>Genome Genoma </li>
+            <li>Heredity</li>
+            <li>Inborn Error Of Metabolism </li>
+            <li>Inherited </li>
+            <li>Klinefelter Syndrome</li>
+            <li>Mutation</li>
+            <li>Neural Tube Defects</li>
+            <li>Phenotype</li>
+            <li>Polygenic </li>
+            <li>Risk Assessment </li>
+            <li>Sickle Cell Disease</li>
+            <li>Spina Bifida</li>
+            <li>Tay-Sachs Disease</li>
+            <li>Thalassemia </li>
+            <li>Trisomy 13(Patau Syndrome)</li>
+            <li>Trisomy 18(Edwards Syndrome)</li>
+            <li>Turner Syndrome</li>
+        </ol>
+    </div>
+
+    <div class="ENT">
+        <h2>ENT</h2>
+    <ol> 
+        <li>Allergies</li>
+        <li>Auditory Nerve</li>
+        <li>Adenoids</li>
+        <li>Benign Paroxysmal Positional Vertigo (BPPV)</li>
+        <li>Cochlea</li> 
+        <li>Choclea Implant</li>
+        <li>Conductive Hearing Loss</li>
+        <li>Deafness</li>
+        <li>Eardrum</li>
+        <li>Ear Canal</li>
+        <li>Ear Infections</li>
+        <li>Earwax</li>
+        <li>Eustachian Tube</li>
+        <li>Gastroesophageal Reflux Disease (GERD)</li>
+        <li>Hearing Aid </li>
+        <li>Laryngitis</li>
+        <li>Lymphadenectomy</li>
+        <li>Maxillary Sinuses</li>
+        <li>Nostrils</li>
+        <li>Rhinitis</li>
+        <li>Salivary Glands</li>
+        <li>Tonsils</li>
+        <li>Tonsillectomy</li>
+        <li>Tracheostomy</li>
+        <li>Vertigo</li>
+        <li>Vestibular Disorder</li>
+    </ol>
+    </div>
+
+    <div class="OBGYN">
+        <h2>OBGYN(OBSTETRISIA)</h2>
+        <ol>
+            <li>Amniotic Fluid</li>
+            <li>Amniotic Hook</li>
+            <li>Baby Blues</li>
+            <li>Back Labor</li>
+            <li>Bacterial Vaginosis</li>
+            <li>Barrier Methods</li>
+            <li>Birth Certificate</li>
+            <li>Birthmark</li>
+            <li>Braxton Hicks Contractions</li>
+            <li>Breast Exam Gloves</li>
+            <li>Breast Self Exam</li>
+            <li>Breech BirthCervical Biopsy Forceps</li>
+            <li>Cervical Dilators </li>
+            <li>Cervix</li>
+            <li>Colostrum </li>
+            <li>Colposcope </li>
+            <li>Congenital Abnoramlities </li>
+            <li>Contraceptive </li>
+            <li>ContractionsCryothrapy Device </li>
+            <li>Cyst </li>
+            <li>Dilation</li>
+            <li>Discharge </li>
+            <li>Doppler Ultrasound</li>
+            <li>Ectopic Pregnancy</li>
+            <li>Electronic Fetal Monitor </li>
+            <li>Endometrial Biopsy Pipelle </li>
+            <li>Endometriosis</li>
+            <li>Episiotomy </li>
+            <li>Estrogen Replacement Therapy</li>
+            <li>Fallopian Tubes</li>
+            <li>Family Planning</li>
+            <li>Fetal Doppler</li>
+            <li>Fetal Monitoring </li>
+            <li>Fibrosis </li>
+            <li>Gestational Diabetes</li>
+            <li>Gonorrhea</li>
+            <li>Herpes Simplex</li>
+            <li>High Risk Pregnancy</li>
+            <li>Hormone Replacement Therapy</li>
+            <li>Hysteroscope </li>
+            <li>Infertility </li>
+            <li>Iron Deficiency Anemia</li>
+            <li>IUD( Intrauterine Device)</li>
+            <li>Lactations</li>
+            <li>Mammogram</li>
+            <li>Mastectomy </li>
+            <li>Menopause</li>
+            <li>Miscarriage</li>
+            <li>Obstetric Forceps</li>
+            <li>Obstetric Ultrasound Probe</li>
+            <li>Oral Contraceptive</li>
+            <li>Osteoporosis</li>
+            <li>Pap Smear</li>
+            <li>Pap Smear Brush</li>
+            <li>Placenta </li>
+            <li>Placenta Previa</li>
+            <li>Polycystic Ovary Syndrome</li>
+            <li>Polyp</li>
+            <li>Post Partum</li>
+            <li>Postpartum Depression</li>
+            <li>Preeclampsia</li>
+            <li>Prolapse </li>
+            <li>Speculum</li>
+            <li>Tubal Ligation</li>
+            <li>Ultrasound</li>
+            <li>Ultrasound Machine</li>
+            <li>Uterine Bleeding</li>
+            <li>Vacuum Extractor</li>
+            <li>Vaginal Discharge</li>
+            <li>Vaginal Infection</li>
+            <li>Vaginal Speculum</li>
+            <li>Vaginal Yeast Infection</li>
+            <li>Yeast Infection</li>
+        </ol>
+    </div>
+
+    <div class="Farmacy Medications">
+        <h2>Farmacy Medications</h2>
+    <ol>
+        <li>Albuterol</li> 
+        <li>Anlodipine</li>
+        <li>Antihistamines</li>
+        <li>Atorvastatin</li>
+        <li>Carvedilol</li>
+        <li>Claritin</li>
+        <li>Gabapentin</li>
+        <li>Hydrocodone</li>
+        <li>Levothyroxine</li>
+        <li>Losartan</li>
+        <li>Metformin</li>
+        <li>Metoprolol</li>
+        <li>Omeprazole</li>
+        <li>Simvastatin</li>
+    </ol>
+
+
+        <p>POCO COMUNES</p>
+    <ol>
+        <li>Quetiapina</li>
+        <li>Januvia</li> 
+        <li>Donepezil</li>
+        <li>Clopidogrel</li>
+        <li>Memantine</li> 
+        <li>Pyridium</li>
+        <li>Tacrolimus</li>
+    </ol>
+    </div>
+
+    <h2>Hold Time Policy</h2>
+
+    "Please Know that we have a company policy of a 10 minute hold time unless you require me to hold longer. If you require me to hold longer, please let me know. I will be happy to hold for you."
+
+    After the period of time agreed, we verify is the client is back on the line:
+    "This is the interpreter speaking. Client, are you back on the line?"
+    We ask this 3 times.If theres no answer we say:
+    "Im not able to hear you at this moment, the interpreter will disconnect from the call after holding for the requested time, thank you for using our services"
+
+    If there is another person in the call, we thanks them for using our services and kindly let them know that he hold time has expired and we will disconnect from the call.
+
+
+    <h2>Medical Abreviations</h2>
+    <ol>
+        <li>ADD</li>
+        <li>ADHD</li>
+        <li>BMI Body Mass Index</li>
+        <li>CBC Complete Blood Count</li>
+        <li>COPD Chronic Obstructive Pulmonary Disease</li>
+        <li>CPR Cardiopulmonary Resuscitation</li>
+        <li>DKA Diabetic Ketoacidosis</li>
+        <li>DNC Dilation and Curettage</li>
+        <li>DNR Do Not Resuscitate</li>
+        <li>DPT Diphtheria, Pertussis, Tetanus</li>
+        <li>EEG Electroencephalogram</li>
+        <li>EKG Electrocardiogram</li>
+        <li>ENT Ear, Nose, Throat</li>
+        <li>ER Emergency Room</li>
+        <li>GERD Gastroesophageal Reflux Disease</li>
+        <li>GI Gastrointestinal</li>
+        <li>HIV Human Immunodeficiency Virus</li>
+        <li>HPV Human Papillomavirus</li>
+        <li>ICU Intensive Care Unit</li>
+        <li>IUD Intrauterine Device</li>
+        <li>MRI Magnetic Resonance Imaging</li>
+        <li>MRSA Methicillin-Resistant Staphylococcus Aureus</li>
+        <li>NICU Neonatal Intensive Care Unit</li>
+        <li>NP Nurse Practitioner</li>
+        <li>NPO Nothing by Mouth</li>
+        <li>OR Operating Room</li>
+        <li>OTPT Occupational Therapy/Physical Therapy</li>
+        <li>PAT Pre-Admission Testing</li>
+        <li>PCOS Polycystic Ovary Syndrome</li>
+        <li>PCP Primary Care Physician</li>
+        <li>RN Registered Nurse</li>
+        <li>RSV Respiratory Syncytial Virus</li>
+        <li>STD Sexualy Transmitted Disease</li>
+        <li>TB Tuberculosis</li>
+        <li>TPN Total Parenteral Nutrition</li>
+        <li>UTI Urinary Tract Infection</li>
+        <li>VRE Vancomycin-Resistant Enterococcus</li>
+        <li>EMG Electromyography</li>
+        <li>EGD Esophagogastroduodenoscopy</li>
+        <li>MRV Magnetic Resonance Venography </li>
+    </ol>
+
+    <h2>Medical Vocabulary</h2>
+<ol>
+    <li>A1C </li>
+    <li>Acid Reflux</li>
+    <li>Airways</li>
+    <li>Alopecia Areata</li>
+    <li>Amniocentesis</li>
+    <li>Aneurism </li>
+    <li>Annual Out-Of Pocket </li>
+    <li>Aortic ValveAttending Physician </li>
+    <li>Bedside Commode</li>
+    <li>Binging or Purgin </li>
+    <li>Black Tarry Stools</li>
+    <li>Braxton and Hicks Contractions</li>
+    <li>Breasfeeding Clinic</li>
+    <li>Bronchi</li>
+    <li>Bulging Disc</li>
+    <li>Bunion </li>
+    <li>Carbon Monoxide Poisoning </li>
+    <li>Carpal Tunnel Syndrome</li>
+    <li>Chart </li>
+    <li>Cholestasis of Pregnancy</li>
+    <li>Claim Denial </li>
+    <li>Clubfoot</li>
+    <li>Cluster Feeding</li>
+    <li>Co-Pay</li>
+    <li>Cloclear Implant</li>
+    <li>Congfestive Heart Failure</li>
+    <li>Contracted Providers</li>
+    <li>Coughing Fit</li>
+    <li>Cystoscopy With Left Retrograde Pyelogram</li>
+    <li>Dandruff</li>
+    <li>Defibrillator</li>
+    <li>Draw Blood</li>
+    <li>Dull Pain</li>
+    <li>Dumping Syndrome</li>
+    <li>Eardrum</li>
+    <li>Erysipelas</li>
+    <li>Expedited</li>
+    <li>Eye Drops</li>
+    <li>Fallopian Tube</li>
+    <li>Flush IV</li>
+    <li>Forearm</li>
+    <li>Garbled Speech </li>
+    <li>Gnawing PanickGoiter</li>
+    <li>Goose Egg</li>
+    <li>Graft vs Host Disease</li>
+    <li>Groin</li>
+    <li>Gum</li>
+    <li>Hamstering</li>
+    <li>Hand Foot Mouth Disease </li>
+    <li>Harrington Rods</li>
+    <li>Hashimoto Throidism </li>
+    <li>Healthcare Proxy</li>
+    <li>Heart Failure</li>
+    <li>Heartburn</li>
+    <li>Hot Flash</li>
+    <li>Joints</li>
+    <li>Low Lying Placenta</li>
+    <li>Lozenge </li>
+    <li>Marfan Syndrome </li>
+    <li>Mental Gaps</li>
+    <li>Mumps</li>
+    <li>NG Tube - Nasogastric Tube</li>
+    <li>NIPs - Non Invasive Positive Pressure Ventilation</li>
+    <li>Optic Nerve </li>
+    <li>Orthotics </li>
+    <li>Pace Maker</li>
+    <li>Pang</li>
+    <li>Panting </li>
+    <li>Peri Wash Bottle</li>
+    <li>Phimosis</li>
+    <li>PICC line - Peripherally Inserted Central Catheter  </li>
+    <li>Piercing Pain</li>
+    <li>Prolia Ingection</li>
+    <li>Resection</li>
+    <li>Retine</li>
+    <li>Rod</li>
+    <li>Sacrum</li>
+    <li>Scalp</li>
+    <li>Searing Pain</li>
+    <li>Shrapnel </li>
+    <li>Sickle Cell Anemia</li>
+    <li>Spina Bifida </li>
+    <li>Spit Up </li>
+    <li>Spleen</li>
+    <li>Stabbing Pain</li>
+    <li>Stinging Pain</li>
+    <li>TDAP - Tetanus, Diphtheria, Pertussis Vaccine</li>
+    <li>Testosterone Cypionate</li>
+    <li>Throbbing/Pulsating Pain</li>
+    <li>Thyroid Storm </li>
+    <li>Tonsil Stones</li>
+    <li>Transdermical Patches</li>
+    <li>Trisomy 13</li>
+    <li>Trisomy 21 </li>
+    <li>Tuck Pads</li>
+    <li>Tunneled Hemodialysis Catheter</li>
+    <li>Turbinate </li>
+    <li>Utereal Stent Insertion</li>
+    <li>Vaginal Discharge</li>
+    <li>Vertebrae</li>
+    <li>Witch Hazel Pads</li>
+    <li>Yeast Infection</li>
+    <li>Lithotripsy</li>
+    <li>Percutaneus</li>
+    <li>Laparoscopic </li>
+    <li>Myasthenia Gravis </li>
+    <li>Multiple Myeloma </li>
+    <li>Sickel Cell Anemia</li>
+    <li>Power Cardiac Defibrillator</li>
+    <li>Joint Replacement</li>
+    <li>Stirrup </li>
+    <li>Skin Tag</li>
+</ol>
+
+<h2>Legal Vocabulary</h2>
+<ol>
+    <li>Commonwealth</li>
+    <li>Cumbersome</li>
+    <li>Disclaimer </li>
+    <li>Duress</li>
+    <li>Federal Law Enforcement</li>
+    <li>Law Enforcement</li>
+    <li>Subpoena</li>
+</ol>
+
+<h2>Financial Vocabulary</h2>
+<ol>
+    <li>Creditor</li>
+    <li>Down Payment</li>
+    <li>Fixed Interest ResuscitateForeclosure</li>
+    <li>Grievance </li>
+    <li>Interest Rate</li>
+    <li>Mortgage</li>
+    <li>Waiver Services</li>
+    <li>Write Off</li>
+</ol>
+
+<h2>Car Insurance Vocabulary</h2>
+<ol>
+    <li>Adjuster</li>
+    <li>Appraisal</li>
+    <li>Breathalyzer</li>
+    <li>Dent</li>
+    <li>Front Bumper</li>
+    <li>Ignition Interlock Device</li>
+    <li>Lien Holder</li>
+    <li>Rear Bumper</li>
+    <li>Settle</li>
+</ol>
+
+<h2>Franses Sin Traduccion Literal</h2>
+
+<ol>
+    <li>I am on my way</li>
+    <li>Silver lining</li>
+    <li>For good measure</li>
+    <li>On call</li>
+</ol>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

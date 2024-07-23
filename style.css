@@ -1,0 +1,6 @@
+.basico {
+    display: flex;
+}
+.head, .torso, .basico, .upperlimb, .lowerlimb, .bloodtest, .cardio, .dental, .gi, .endocrine, .genetics, .ent, .obgyn, .meds, .abreviations, .vocabulary, .legal, .financial, .cars, .notliteral{
+    display: flex;
+}
